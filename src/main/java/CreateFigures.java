@@ -23,7 +23,7 @@ public class CreateFigures {
         figures.add(new Triangle());
 
         for (Figure figure : figures) {
-            System.out.println("Figure : " + figure.getClass() + ", square - " + figure.square()+ "sq.m," + " color -" + figure
+            System.out.println("Figure : " + figure.getClass() + ", square - " + figure.square()+ "sq.m," + " color - " + figure
                     .generationRandomColor());
         }
     }

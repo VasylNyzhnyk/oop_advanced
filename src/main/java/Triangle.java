@@ -33,3 +33,6 @@ public class Triangle extends Figure {
         return super.generationRandomColor();
     }
 }
+
+
+

@@ -34,3 +34,6 @@ public class Square extends Figure{
         return super.generationRandomColor();
     }
 }
+
+
+

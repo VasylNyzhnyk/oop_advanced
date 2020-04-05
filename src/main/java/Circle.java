@@ -32,3 +32,6 @@ public class Circle extends Figure {
         return super.generationRandomColor();
     }
 }
+
+
+

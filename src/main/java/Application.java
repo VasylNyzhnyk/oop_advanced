@@ -10,21 +10,23 @@
  Фигура: квадрат, площадь: 25 кв. ед., длина стороны: 5 ед., цвет: синий
  Фигура: треугольник, площадь: 12,5 кв.ед., гипотенуза: 7.1 ед., цвет: желтый*/
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 public class Application {
     public static void main(String[] args) {
-        Circle circle = new Circle();
-        Square square = new Square();
-        Triangle triangle = new Triangle();
-        Trapezoid trapezoid = new Trapezoid();
 
-        System.out.println(trapezoid.getClass() + " " + trapezoid.square() + " " + " " + trapezoid.generationRandomColor());
-        System.out.println(circle.getClass() + " " + circle.square() + " " + " " + circle.generationRandomColor());
-        System.out.println(square.getClass() + " " + square.square() + " " + " " + square.generationRandomColor());
-        System.out.println(triangle.getClass() + " " + triangle.square() + " " + " " + triangle.generationRandomColor());
+        List<Figure> figures = new ArrayList<>();
+        figures.add(new Trapezoid());
+        figures.add(new Circle());
+        figures.add(new Square());
+        figures.add(new Triangle());
 
-
+        for (Figure figure : figures) {
+            System.out.println(figure.getClass() + " " + figure.square() + " " + figure
+                    .generationRandomColor() );
+        }
     }
 
 }
